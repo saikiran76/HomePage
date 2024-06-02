@@ -15,5 +15,23 @@
             <button id="contact-us-button">Contact Us</button>
         </div>
     </section>
+
+    <!--Form -->
+    <div id="popup-form" class="popup-form hidden">
+        <form id="contact-form">
+            <label for="email">Work email</label>
+            <input type="email" id="email" name="email" required>
+            <label for="first-name">First name</label>
+            <input type="text" id="first-name" name="first-name" required>
+            <label for="last-name">Last name</label>
+            <input type="text" id="last-name" name="last-name" required>
+            <label>
+                <input type="checkbox" name="consent" required> I agree to the terms and conditions
+            </label>
+            <button type="submit" style="margin-bottom: 1em;">Contact Us</button>
+        </form>
+        <button id="close-popup">Close</button>
+    </div>
+
 </body>
 </html>

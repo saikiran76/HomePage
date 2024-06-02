@@ -10,15 +10,58 @@ body {
     padding: 20px;
 }
 
+
+/*Contact Us Section*/
 .contact-us {
     background-color: #f4f4f4;
     padding: 50px 0;
 }
 
+/* Style for contact-us button */
 .contact-us button {
     padding: 10px 20px;
     background-color: #ff0000;
     color: #fff;
     border: none;
     cursor: pointer;
+}
+
+.popup-form {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.popup-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.popup-form label {
+    margin-bottom: 5px;
+}
+
+.popup-form input {
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.popup-form button {
+    padding: 10px 20px;
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#close-popup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
 }
