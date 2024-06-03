@@ -275,3 +275,44 @@ input{
     border-radius: 0.3em;
 }
 
+.highlight{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2em;
+
+}
+.highlight {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.flex {
+    padding: 1em;
+}
+
+.hover {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    width: 200px;
+    box-shadow: 2px 2px 2px #bbb;
+    padding: 2.3em;
+    border-radius: 0.5em;
+    /* background-color: #F6F6F6; */
+}
+
+i {
+    color: #FF0000;
+    margin-bottom: 0.5em;
+}
+
+h2, h4 {
+    margin: 0.5em 0;
+    text-align: center;
+}
+
