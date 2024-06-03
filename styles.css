@@ -1,7 +1,6 @@
-*{
+* {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-
 
 body {
     margin: 0;
@@ -13,7 +12,6 @@ body {
     padding: 20px;
 }
 
-
 /*Contact Us Section*/
 .contact-us {
     background-color: #f4f4f4;
@@ -23,61 +21,60 @@ body {
 /* Style for contact-us button */
 .contact-us button {
     padding: 10px 20px;
-    background-color: #ff0000;
+    background-color: #ED3C64;
     color: #fff;
     border: none;
     border-radius: 0.3em;
     cursor: pointer;
 }
 
-.contact{
+.contact {
     display: flex;
-    gap:4rem;
-    margin: 2em
+    gap: 4rem;
+    margin: 2em;
 }
 
-#contact-form{
-    width:28rem;
+#contact-form {
+    width: 28rem;
 }
 
-#contact{
+#contact {
     width: 45%;
     margin-left: 4rem;
 }
 
-.names{
+.names {
     display: flex;
-    gap:1em;
+    gap: 1em;
 }
 
-.contact img{
+.contact img {
     width: 40%;
 }
 
-.right{
-    margin-left:2rem;
+.right {
+    margin-left: 2rem;
 }
 
-#digital{
+#digital {
     font-size: 3em;
 }
 
-.award{
+.award {
     color: #ED3944;
 }
 
-
-#email{
-    border:none;
-    border-bottom: 2px solid gray
+#email {
+    border: none;
+    border-bottom: 2px solid gray;
 }
 
-input{
-    border:none;
-    border-bottom: 2px solid gray
+input {
+    border: none;
+    border-bottom: 2px solid gray;
 }
 
-#contact-form{
+#contact-form {
     padding: 1.5em;
     border-radius: 2rem;
 }
@@ -116,7 +113,7 @@ input{
     cursor: pointer;
 }
 
-#close-popup{
+#close-popup {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -128,22 +125,22 @@ input{
     display: none;
 }
 
-
 .text-danger {
     color: #FF0000 !important;
 }
 
+/** Carousel Styles**/
 .carousel {
     padding: 50px 0;
     background-color: #fff;
 }
 
-.content{
-  display: flex;
-  align-items:center;
-  justify-content: center;
-  margin-left: 5em;
-  margin-right: 5em;
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5em;
+    margin-right: 5em;
 }
 
 .carousel-container {
@@ -223,7 +220,7 @@ input{
 
 .carousel-dots {
     margin-top: 20px;
-    float:left
+    float: left;
 }
 
 .dot {
@@ -233,14 +230,16 @@ input{
     background-color: #bbb;
     border-radius: 50%;
     display: inline-block;
+    cursor: pointer;
     transition: background-color 0.6s ease, border 0.6s ease;
 }
 
 .dot.active {
     background-color: #717171;
     border: 2px solid #F44336;
-
 }
+
+/* Project Section */
 
 .slide-container {
     display: flex;
@@ -278,17 +277,18 @@ input{
     color: white;
 }
 
-#mainImage{
+#mainImage {
     border-radius: 0.3em;
 }
 
-.highlight{
+/**Success metrics - Footer Section styles**/
+.highlight {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 2em;
-
 }
+
 .highlight {
     display: flex;
     justify-content: space-around;
@@ -312,7 +312,6 @@ input{
     border-radius: 0.5em;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
-    /* background-color: #F6F6F6; */
 }
 
 .hover:hover {
@@ -325,8 +324,91 @@ i {
     margin-bottom: 0.5em;
 }
 
-h2, h4 {
+.flex h2, h4 {
     margin: 0.5em 0;
     text-align: center;
 }
 
+/* Media Queries for responsiveness */
+@media (max-width: 992px) {
+    .contact {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    #contact {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .right {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .slide-container {
+        flex-direction: column;
+        align-items: center;
+        margin: 2em 1em;
+    }
+
+    .image-container,
+    .content-container {
+        width: 100%;
+        margin: 1em 0;
+    }
+
+    .carousel-slide img {
+        width: 40%;
+    }
+
+    .web-development {
+        width: 40%;
+        margin: 2%;
+    }
+}
+
+@media (max-width: 768px) {
+    .highlight {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hover {
+        width: 80%;
+        margin: 1em 0;
+    }
+
+    .carousel-slide img {
+        width: 60%;
+    }
+
+    .web-development {
+        width: 60%;
+    }
+}
+
+@media (max-width: 576px) {
+    .carousel-slide img {
+        width: 80%;
+    }
+
+    .web-development {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .hover {
+        width: 100%;
+    }
+
+    .carousel-slide img {
+        width: 100%;
+    }
+
+    .web-development {
+        width: 100%;
+    }
+}
