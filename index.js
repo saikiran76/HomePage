@@ -35,6 +35,13 @@ $(document).ready(function() {
     });
 
     showSlide(currentIndex);
+
+
+    $('.content-item').on('click', function() {
+        $('.content-item').removeClass('active');
+        $(this).addClass('active');
+        $('#mainImage').attr('src', $(this).data('image'));
+    });
 });
 
 console.log("JS integrated")
