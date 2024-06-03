@@ -7,6 +7,9 @@
 ## Overview
 This is a HomePage website built using HTML/CSS/JS/JQuery
 
+## Features/ Sections
+- Contact: Form makes a POST request to API end point of GetForm.io (provided)
+
 ## Snaps of the Project
 ![image](https://github.com/saikiran76/HomePage/assets/80874246/7a2ca35b-c12c-4b41-a60a-6efec96f6e2d)
 ![image](https://github.com/saikiran76/HomePage/assets/80874246/f54d32f6-d6ba-4491-a0f3-4cc50b01080e)
