@@ -5,7 +5,7 @@
 <img width="100" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/800px-CSS3_logo_and_wordmark.svg.png" alt="css">
 
 ## Overview
-This is a HomePage website built using HTML/CSS/JS
+This is a HomePage website built using HTML/CSS/JS/JQuery
 
 ## Snaps of the Project
 ![image](https://github.com/saikiran76/HomePage/assets/80874246/7a2ca35b-c12c-4b41-a60a-6efec96f6e2d)
