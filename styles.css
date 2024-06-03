@@ -256,6 +256,8 @@ input{
     flex: 1;
     display: flex;
     flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
 }
 
 .content-item {
@@ -264,6 +266,11 @@ input{
     cursor: pointer;
     background-color: #F6F6F6;
     border-radius: 0.5em;
+}
+
+.content-item:hover {
+    transform: scale(1.05);
+    box-shadow: 4px 4px 10px #bbb;
 }
 
 .active {
@@ -303,7 +310,14 @@ input{
     box-shadow: 2px 2px 2px #bbb;
     padding: 2.3em;
     border-radius: 0.5em;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
     /* background-color: #F6F6F6; */
+}
+
+.hover:hover {
+    transform: scale(1.1);
+    box-shadow: 4px 4px 10px #bbb;
 }
 
 i {
