@@ -30,6 +30,7 @@ body {
 
 .contact {
     display: flex;
+    flex-direction: row;
     gap: 4rem;
     margin: 2em;
 }
@@ -129,7 +130,7 @@ input {
     color: #FF0000 !important;
 }
 
-/** Carousel Styles**/
+/** Carousel Styles **/
 .carousel {
     padding: 50px 0;
     background-color: #fff;
@@ -240,9 +241,9 @@ input {
 }
 
 /* Project Section */
-
 .slide-container {
     display: flex;
+    flex-direction: row;
     margin: 7em;
 }
 
@@ -281,19 +282,13 @@ input {
     border-radius: 0.3em;
 }
 
-/**Success metrics - Footer Section styles**/
-.highlight {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 2em;
-}
-
+/** Success metrics - Footer Section styles **/
 .highlight {
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+    margin-bottom: 2em;
 }
 
 .flex {
@@ -330,43 +325,49 @@ i {
 }
 
 .why-container {
-    /* text-align: center; */
-    margin:6rem
-    /* margin */
+    margin: 6rem;
 }
+
 .title {
     color: red;
     font-weight: bold;
     margin-bottom: 10px;
     text-align: center;
 }
+
 .subtitle {
     font-size: 2em;
     font-weight: bold;
     margin-bottom: 30px;
     text-align: center;
 }
+
 .features {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
+
 .feature {
     width: 200px;
     /* text-align: center; */
+    margin-bottom: 20px;
 }
+
 .feature-icon {
     font-size: 2em;
     margin-bottom: 15px;
 }
+
 .feature-title {
     font-weight: bold;
     margin-bottom: 10px;
 }
+
 .feature-description {
     color: #777;
 }
 
-/* Media Queries for responsiveness */
 @media (max-width: 992px) {
     .contact {
         flex-direction: column;
@@ -412,6 +413,10 @@ i {
         align-items: center;
     }
 
+    .section-description{
+        margin-left: 2.4em;
+    }
+
     .hover {
         width: 80%;
         margin: 1em 0;
@@ -423,6 +428,11 @@ i {
 
     .web-development {
         width: 60%;
+    }
+
+    .why-container{
+        margin-top: 7rem;
+
     }
 }
 
@@ -448,4 +458,28 @@ i {
     .web-development {
         width: 100%;
     }
+
+    .right {
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .award, #digital {
+        text-align: center;
+    }
+
+    .why-container {
+        margin: 2rem;
+    }
+
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature {
+        width: 100%;
+        text-align: center;
+    }
 }
+
